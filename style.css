@@ -1,0 +1,35 @@
+input {
+    display: none;
+  }
+  
+  label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 4px;
+    background: #3d006e5c;
+    color: #FFF;
+    font-family: arial;
+    -webkit-transition: background-color 0.1s, color 0.1s;
+    place-items: center;
+  }
+  
+  label:hover {
+    background: #c356cd;
+    color: #000;
+  }
+  
+  .test {
+    -webkit-transition: height .3s ease;
+    height: 0;
+    overflow: hidden;
+    width: 100px;
+    background: rgba(1, 158, 161, 0.39);
+    margin-top: 20px;
+  }
+  
+  input:checked + .test {
+    height: 100px;
+  }
+  
